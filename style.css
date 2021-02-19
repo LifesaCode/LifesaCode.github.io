@@ -1,0 +1,142 @@
+nav {
+  position: sticky;
+  top:0;
+  width: 100%;
+}
+
+.topNavBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 1% 2% 1% 2%;
+  font-size: 14pt;
+  background-color: lightblue;
+}
+
+.topNavBar li {
+  display: inline;
+  padding: 1% 2% 1% 2%;
+}
+
+ .topNavBar li:hover{
+   background-color:goldenrod;
+ }
+
+ #banner {
+   display: flex;
+   flex-direction:column;
+   background-image: url(dog-3564569_1920.jpg);
+   background-size: 70%;
+   background-color:rgb(236, 234, 234);
+   color:lightblue;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 0% 0 40% 0;
+ }
+
+h1 {
+    font-size: 32px;
+    color: rgb(0, 138, 184);
+    margin-left: 2%;
+}
+
+#banner h1{
+  font-size: 42px;
+}
+
+ h2 {
+   font-size: 18px;
+ }
+
+ .fa-paw {
+  display: inline-block;
+  font-size: 500%;
+  color: lightblue;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+/* Mobile page */
+@media (max-width:600px){
+ 
+  .card{
+    margin:auto;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 6px 2px lightblue;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .card h2{
+    text-align: center;
+}
+  .card ul{
+    list-style-type:none;
+    padding: 1%;
+    text-align: center;
+  }  
+  img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px 6px 2px lightblue;
+  }
+  
+  .bioArticle {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bioArticle h2{
+    color:rgb(0, 138, 184);
+  }
+  p{
+    margin: 1em;
+  }
+}
+
+/* Full size page */
+ @media (min-width: 601px){
+  #servicesRow1, #servicesRow2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .card{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .card h2{
+    text-align: center;
+  }
+  .card ul{
+   
+    padding: 1%;
+    text-align: center;
+  }   
+  img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px 6px 2px lightblue;
+  }
+  
+  .bioArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  p{
+    margin: 1em;
+  }
+}
+
+
+ 
