@@ -8,16 +8,19 @@
 </head>
 
 <link rel="stylesheet" href="style.css">
-
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto&display=swap');
+</style>
 <body>
-    <nav id="topNavBar" >
-        <ul class="topNavBar" id="topNavBarList">
-            <li id="navVar1">Home</li>
-            <li id="navBar2"><a href="#Services">Services</a></li>
-            <li id="navBar3"><a href="#About">About</a></li>
-            <li id="navBar4"><a href="#Contact">Contact</a></li>
-        </ul>
+    <nav class="topNavBar" id="topNavBar" >
+        <div class="topNavLinks">
+            <a href="#Home" class="topNavItem"><span class="lobsterizeInitialLetter">H</span>ome</a>
+            <a href="#Services" class="topNavItem"><span class="lobsterizeInitialLetter">S</span>ervices</a>
+            <a href="#About" class="topNavItem"><span class="lobsterizeInitialLetter">A</span>bout</a>
+            <a href="#Contact" class="topNavItem"><span class="lobsterizeInitialLetter">C</span>ontact</a>
+        </div>
     </nav>
+    
     <div id="banner">
         <h1>Adaptive Canine Academy</h1>
     </div>
@@ -28,7 +31,7 @@
             <div id="puppy" class="card">
                 <i class="fas fa-paw" style="color: orchid"></i>
                 <div>
-                    <h2 id="puppyTitle" class="serviceName">Puppy</h2>
+                    <h2 id="puppyTitle" class="serviceName"><span class="lobsterizeInitialLetter">P</span>uppy</h2>
                     <ul id="PuppyList">
                         <li id="puppy1" class="puppyListItems">Sit, Stay, Come, Down</li>
                         <li id="puppy2" class="puppyListItems">Loose Leash Walking</li>
@@ -41,7 +44,7 @@
             <div id="basics" class="card">
                 <i class="fas fa-paw" style="color: springgreen"></i>
                 <div>
-                    <h2 id="basicsTitle" class="serviceName">Basic</h2>
+                    <h2 id="basicsTitle" class="serviceName"><span class="lobsterizeInitialLetter">B</span>asic</h2>
                     <ul id="basicList">
                         <li id="basic1" class="basicListItems">For dogs over 6 months</li>
                         <li id="basic2" class="basicListItems">Sit, Stay, Come, Down</li>
@@ -54,7 +57,7 @@
             <div id="intermediate" class="card">
                 <i class="fas fa-paw" style="color:orange"></i>
                 <div>
-                    <h2 id="intermediateTitle" class="serviceName">Intermediate</h2>
+                    <h2 id="intermediateTitle" class="serviceName"><span class="lobsterizeInitialLetter">I</span>ntermediate</h2>
                     <ul id="ntermediateList">
                         <li id="interm1" class="intermListItems">Down and Stay</li>
                         <li id="interm2" class="intermListItems">Beginning Work at a Distance</li>
@@ -69,7 +72,7 @@
             <div id="advanced" class="card">
                 <i class="fas fa-paw" style="color: darkturquoise"></i>
                 <div>
-                    <h2 id="advancedTitle" class="serviceName">Advanced</h2>
+                    <h2 id="advancedTitle" class="serviceName"><span class="lobsterizeInitialLetter">A</span>dvanced</h2>
                     <ul id="advancedList">
                         <li id="adv1" class="advListItems">Advanced Heel</li>
                         <li id="adv2" class="advListItems">Advanced Distance Work</li>
@@ -82,7 +85,7 @@
             <div id="service" class="card">
                 <i class="fas fa-paw" style="color: gold"></i>
                 <div>
-                    <h2 id="serviceTitle" class="serviceName">Service Dogs</h2>
+                    <h2 id="serviceTitle" class="serviceName"><span class="lobsterizeInitialLetter">S</span>ervice <span>D</span>ogs</h2>
                     <ul id="serviceService">
                         <li id="serv1" class="serviceListItems">Task Training</li>
                         <li id="serv2" class="serviceListItems">Store Manners</li>
@@ -95,7 +98,7 @@
             <div id="service" class="card">
                 <i class="fas fa-paw" style="color: red"></i>
                 <div>
-                    <h2 id="privateTitle" class="serviceName">Private Coaching</h2>
+                    <h2 id="privateTitle" class="serviceName"><span class="lobsterizeInitialLetter">P</span>rivate <span>S</span>essions</h2>
                     <ul id="privateService">
                         <li id="private1" class="privateListItems">One-on-One Sessions</li>
                         <li id="private2" class="privateListItems">Personalized Goals</li>
@@ -112,26 +115,26 @@
 
     <section id="About"> 
         <h1>About Us</h1>
-        <article class="bioArticle">
+        <article class="bioArticle" id="brittanyArticle">
             <img id="brittanyPic" src="IMG_1128 (2).JPG" alt="Lovely picture of me"/>
             <div class="titleAndBio">
-                <h2 id="brittanyTitle">Brittany</h2>
+                <h2 id="brittanyTitle"><span class="lobsterizeInitialLetter">B</span>rittany</h2>
                 <p id="brittanyBio">Doggo ipsum doggo heckin doggorino such treat yapper heckin angery woofer wrinkler, shibe heckin angery woofer very jealous pupper he made many woofs many pats, waggy wags shibe doggorino length boy waggy wags. Bork long woofer pats big ol, doggo. The neighborhood pupper boof such treat very good spot, floofs heckin. Such treat what a nice floof fluffer fat boi heckin angery woofer, I am bekom fat long water shoob pupper. Puggorino very taste wow pupperino smol borking doggo with a long snoot for pats shibe, long water shoob pupper.</p>
             </div>
             
         </article>
-        <article class="bioArticle"> 
+        <article class="bioArticle" id="rangoArticle"> 
             <div class="titleAndBio">
-                <h2 id="rangoTitle">Rango</h2>
+                <h2 id="rangoTitle"><span class="lobsterizeInitialLetter">R</span>ango</h2>
                 <p id="rangoBio">Noodle horse shoob shoober smol wow such tempt wrinkler, big ol big ol pupper wow very biscit. The neighborhood pupper most angery pupper I have ever seen blep ruff, you are doing me a frighten big ol pupper. Much ruin diet many pats you are doing me the shock waggy wags borkdrive snoot, super chub heckin angery woofer much ruin diet big ol noodle horse woofer, smol long woofer blep heck. Ruff shooberino fat boi h*ck, blep. Heckin good boys sub woofer blop borking doggo shibe very taste wow, pats stop it fren long water shoob. Borking doggo blep doge, heckin. </p>
             </div>
             <img id="rangoPic" src="Rango.jpg" alt="Picture of Rango"/>
             
         </article>
-        <article class="bioArticle">
+        <article class="bioArticle" id="apolloArticle">
             <img id="apolloPic" src="Apollo (2).jpg" alt="Picture of Apollo"/>
             <div class="titleAndBio">
-                <h2 id="apolloTitle">Apollo</h2>
+                <h2 id="apolloTitle"><span class="lobsterizeInitialLetter">A</span>pollo</h2>
                 <p id="apolloBio">Doge woofer dat tungg tho stop it fren pupper, big ol pupper super chub puggo.  Shibe extremely cuuuuuute snoot, bork. Borkf sub woofer stop it fren blep maximum borkdrive, very jealous pupper very hand that feed shibe. Waggy wags h*ck sub woofer snoot pupperino, smol borking doggo with a long snoot for pats doggorino long bois. Many pats pupperino ur givin me a spook pupperino, long bois.</p>
             </div>
             
