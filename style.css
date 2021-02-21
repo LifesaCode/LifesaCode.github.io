@@ -1,23 +1,35 @@
+/*font-family: 'Lobster Two', cursive;
+font-family: 'Roboto', sans-serif; */
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
 nav {
   position: sticky;
   top:0;
   width: 100%;
 }
 
-.topNavBar {
-  list-style-type: none;
+.topNavLinks{
   margin: 0;
-  padding: 1% 2% 1% 2%;
-  font-size: 14pt;
-  background-color: lightblue;
+  padding: .75em 1em;
+  background-color:rgb(0, 138, 184);
+  border-style: solid;
+  text-align: right;
 }
 
-.topNavBar li {
-  display: inline;
-  padding: 1% 2% 1% 2%;
+.topNavItem{
+  padding: .75em 1em;
+  font-size: 1.25em;
+  color:rgb(236, 234, 234);
 }
 
- .topNavBar li:hover{
+
+.lobsterizeInitialLetter {
+  font-family: 'Lobster Two', cursive;
+}
+
+ .topNavBar a:hover {
    background-color:goldenrod;
  }
 
@@ -34,32 +46,45 @@ nav {
  }
 
 h1 {
-    font-size: 32px;
-    color: rgb(0, 138, 184);
-    margin-left: 2%;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2.5em;
+    background-color: rgb(0, 138, 184);
+    color: rgb(236, 234, 234);
+    padding-left: 2%;
 }
 
+/* Make banner heading blue with fully transparent background 
+   so the background behind the text appears to be the image
+*/
 #banner h1{
-  font-size: 42px;
+  font-size: 3em;
+  width: 35%;
+  color: rgb(0, 138, 184);
+  background-color:  rgba(236, 234, 234, 0);
 }
 
  h2 {
-   font-size: 18px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.75em;
+   color: rgb(0, 138, 184);
  }
 
+ /* Styling for pay icons */
  .fa-paw {
   display: inline-block;
   font-size: 500%;
-  color: lightblue;
   text-align: center;
   width: 70%;
   margin: auto;
 }
 
 /* Mobile page */
+/* Display 'Services' and 'About Us' bios as bordered cards 
+   Stack cards on top of each other with spacing between each 
+*/
 @media (max-width:600px){
  
-  .card{
+  .card {
     margin:auto;
     margin-bottom: 30px;
     box-shadow: 3px 3px 6px 2px lightblue;
@@ -69,14 +94,18 @@ h1 {
     flex-wrap: wrap;
     align-content: center;
   }
-  .card h2{
+
+  .card h2 {
     text-align: center;
 }
-  .card ul{
+
+  .card ul {
     list-style-type:none;
     padding: 1%;
     text-align: center;
-  }  
+  } 
+  
+  /* Styling for mobile view of 'About Us' bio's */
   img {
     width: 60%;
     display: block;
@@ -85,27 +114,37 @@ h1 {
   }
   
   .bioArticle {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
   }
-  .bioArticle h2{
+
+  .bioArticle h2 {
     color:rgb(0, 138, 184);
   }
-  p{
-    margin: 1em;
+
+  p {
+    margin: 0em 2em;
+  }
+
+  /* Correct image for 'Rango' so it appears before the description paragraph */
+  #rangoArticle {
+    flex-direction: column-reverse;
   }
 }
 
-/* Full size page */
- @media (min-width: 601px){
-  #servicesRow1, #servicesRow2{
+/* Full size pages */
+/* */
+ @media (min-width: 601px) {
+
+  #servicesRow1, #servicesRow2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 5%;
     margin-right: 5%;
   }
   
-  .card{
+  .card {
     margin: auto;
     width: 80%;
     display: flex;
@@ -113,14 +152,16 @@ h1 {
     flex-wrap: wrap;
     align-content: center;
   }
-  .card h2{
+  .card h2 {
     text-align: center;
+    font-size: 1.75em;
   }
   .card ul{
-   
     padding: 1%;
     text-align: center;
-  }   
+  } 
+
+/* Styling for 'About Us' articles */
   img {
     width: 60%;
     display: block;
@@ -131,10 +172,11 @@ h1 {
   .bioArticle {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 5em;
   }
 
-  p{
-    margin: 1em;
+  p {
+    margin: 0em 2em;
   }
 }
 
